@@ -12,5 +12,5 @@ class SearchBarStyle {
       this.padding = const EdgeInsets.all(5.0),
       this.border = const Border.fromBorderSide(BorderSide(color: Colors.black12)),
       this.borderRadius: const BorderRadius.all(Radius.circular(5.0)),
-      this.height: 80});
+      this.height: 80.0});
 }
