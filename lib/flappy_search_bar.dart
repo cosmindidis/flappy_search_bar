@@ -391,6 +391,7 @@ class _SearchBarState<T> extends State<SearchBar<T>>
                     decoration: BoxDecoration(
                       borderRadius: widget.searchBarStyle.borderRadius,
                       color: widget.searchBarStyle.backgroundColor,
+                      border: widget.searchBarStyle.border
                     ),
                     child: Padding(
                       padding: widget.searchBarStyle.padding,
