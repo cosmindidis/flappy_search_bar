@@ -5,7 +5,7 @@ class SearchBarStyle {
   final EdgeInsetsGeometry padding;
   final BorderRadius borderRadius;
   final BoxBorder border;
-  final int height;
+  final double height;
 
   const SearchBarStyle(
       {this.backgroundColor = const Color.fromRGBO(142, 142, 147, .15),
