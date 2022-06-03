@@ -338,12 +338,12 @@ class _SearchBarState<T> extends State<SearchBar<T>>
       List<T> items, Widget Function(T item, int index) builder) {
     return Padding(
       padding: widget.listPadding,
-      child: StaggeredGridView.countBuilder(
+      child: AlignedGridView.count(
         crossAxisCount: widget.crossAxisCount,
         itemCount: items.length,
         shrinkWrap: widget.shrinkWrap,
-        staggeredTileBuilder:
-            widget.indexedScaledTileBuilder ?? (int index) => ScaledTile.fit(1),
+        // staggeredTileBuilder:
+        //     widget.indexedScaledTileBuilder ?? (int index) => ScaledTile.fit(1),
         scrollDirection: widget.scrollDirection,
         mainAxisSpacing: widget.mainAxisSpacing,
         crossAxisSpacing: widget.crossAxisSpacing,
