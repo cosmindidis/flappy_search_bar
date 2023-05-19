@@ -1,10 +1,10 @@
-# flappy_search_bar
+# flappy_search_bar_ns
 
 A SearchBar widget handling most of search cases.
 
 ## Usage
 
-To use this plugin, add flappy_search_bar as a dependency in your pubspec.yaml file.
+To use this plugin, add flappy_search_bar_ns as a dependency in your pubspec.yaml file.
 
 ### Example
 
