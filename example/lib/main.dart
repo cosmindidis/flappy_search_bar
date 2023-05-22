@@ -62,7 +62,7 @@ class _HomeState extends State<Home> {
           indexedScaledTileBuilder: (int index) => ScaledTile.count(1, index.isEven ? 2 : 1),
           header: Row(
             children: <Widget>[
-              RaisedButton(
+              ElevatedButton(
                 child: Text("sort"),
                 onPressed: () {
                   _searchBarController.sortList((Post a, Post b) {
@@ -70,13 +70,13 @@ class _HomeState extends State<Home> {
                   });
                 },
               ),
-              RaisedButton(
+              ElevatedButton(
                 child: Text("Desort"),
                 onPressed: () {
                   _searchBarController.removeSort();
                 },
               ),
-              RaisedButton(
+              ElevatedButton(
                 child: Text("Replay"),
                 onPressed: () {
                   isReplay = !isReplay;
