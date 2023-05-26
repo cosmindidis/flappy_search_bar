@@ -60,7 +60,7 @@ class SearchBarController<T> {
       );
 
       final List<T> items =
-          await (_cancelableOperation!.value as FutureOr<List<T>>);
+          await (_cancelableOperation!.value);
       _lastSearchFunction = onSearch;
       _lastSearchedText = text;
       _list.clear();
