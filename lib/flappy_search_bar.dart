@@ -386,6 +386,7 @@ class _SearchBarState<T> extends State<SearchBar<T?>>
             height: widget.searchBarStyle.height,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Flexible(
                   child: AnimatedContainer(
@@ -412,6 +413,9 @@ class _SearchBarState<T> extends State<SearchBar<T?>>
                         ),
                         data: Theme.of(context).copyWith(
                           primaryColor: widget.iconActiveColor,
+                          inputDecorationTheme: InputDecorationTheme(
+                            enabledBorder: InputBorder.none,
+                            focusedBorder: InputBorder.none),
                         ),
                       ),
                     ),
